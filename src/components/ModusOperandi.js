@@ -2,7 +2,7 @@
 import React, { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 
-export default function Methodology() {
+export default function ModusOperandi() {
   const containerRef = useRef(null);
   const { scrollYProgress } = useScroll({
     target: containerRef,

@@ -11,8 +11,8 @@ const constructs = [
   },
   {
     id: '02',
-    title: 'Infrastructural Dominance',
-    desc: 'Engineering the physical and digital bedrock of tomorrow. Building sovereign ecosystems that elevate existence.',
+    title: 'Immutable Architecture',
+    desc: 'Engineering the clinical structural integrity of the physical and digital bedrock. Building sovereign ecosystems that elevate existence.',
     color: 'from-emerald-500/20 to-cyan-600/20'
   },
   {
@@ -23,7 +23,7 @@ const constructs = [
   }
 ];
 
-export default function Capabilities() {
+export default function StructuralCapacities() {
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
   return (
