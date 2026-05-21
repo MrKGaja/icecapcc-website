@@ -7,24 +7,24 @@ export default function Hero() {
       
       {/* 1. Fluid Gradient Mesh Background */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none opacity-80">
-        {/* Blob 1: Deep Violet/Purple */}
+        {/* Blob 1: Deep Indigo */}
         <div className="absolute top-1/4 left-1/4 w-[50vw] h-[50vw] rounded-full mix-blend-screen animate-blob1"
              style={{
-               background: 'radial-gradient(circle, rgba(124, 58, 237, 0.7) 0%, rgba(124, 58, 237, 0) 70%)',
+               background: 'radial-gradient(circle, rgba(30, 27, 75, 0.8) 0%, rgba(30, 27, 75, 0) 70%)',
                filter: 'blur(100px)'
              }} />
         
-        {/* Blob 2: Vibrant Cyan/Teal */}
+        {/* Blob 2: Stark Indigo */}
         <div className="absolute top-1/3 right-1/4 w-[60vw] h-[60vw] rounded-full mix-blend-screen animate-blob2"
              style={{
-               background: 'radial-gradient(circle, rgba(6, 182, 212, 0.6) 0%, rgba(6, 182, 212, 0) 70%)',
+               background: 'radial-gradient(circle, rgba(49, 46, 129, 0.7) 0%, rgba(49, 46, 129, 0) 70%)',
                filter: 'blur(120px)'
              }} />
              
-        {/* Blob 3: Deep Blue */}
+        {/* Blob 3: Weightless Indigo */}
         <div className="absolute bottom-[-10%] left-1/3 w-[70vw] h-[70vw] rounded-full mix-blend-screen animate-blob3"
              style={{
-               background: 'radial-gradient(circle, rgba(37, 99, 235, 0.6) 0%, rgba(37, 99, 235, 0) 70%)',
+               background: 'radial-gradient(circle, rgba(55, 48, 163, 0.6) 0%, rgba(55, 48, 163, 0) 70%)',
                filter: 'blur(140px)'
              }} />
       </div>

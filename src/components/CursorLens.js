@@ -49,9 +49,11 @@ export default function CursorLens() {
         width: '180px',
         height: '180px',
         transform: 'translate(-50%, -50%)',
-        boxShadow: 'inset 0 0 40px rgba(255,255,255,0.05)',
-        border: '1px solid rgba(255,255,255,0.1)',
-        background: 'radial-gradient(circle at center, rgba(255,255,255,0.03) 0%, transparent 70%)',
+        boxShadow: 'inset 0 0 40px rgba(255,255,255,0.05), 0 0 20px rgba(255,255,255,0.1)',
+        border: '1px solid rgba(255,255,255,0.15)',
+        background: 'radial-gradient(circle at center, rgba(255,255,255,0.05) 0%, transparent 70%)',
+        backdropFilter: 'blur(8px)',
+        WebkitBackdropFilter: 'blur(8px)',
         transition: 'width 0.3s ease, height 0.3s ease',
       }}
     >
