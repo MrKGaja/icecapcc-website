@@ -1,49 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-html {
-  height: 100%;
-}
-
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
-}
-
-body {
-  min-height: 100%;
-  display: flex;
-  flex-direction: column;
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  --bg-dark: #000000;
+  --text-dark: #ffffff;
+  --font-grotesk: 'Space Grotesk', sans-serif;
 }
 
 * {
   box-sizing: border-box;
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+body {
+  background-color: var(--bg-dark);
+  color: var(--text-dark);
+  font-family: var(--font-grotesk);
+  overflow-x: hidden; /* Only lock horizontal scroll */
+  cursor: none; /* Hide default cursor to use custom Glass Lens */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+/* Make sure all interactive elements hide cursor too */
+a, button, input {
+  cursor: none !important;
 }
+
+h1, h2, h3, h4 {
+  font-family: var(--font-grotesk);
+  line-height: 1;
+}
+
+/* -------------------------------------
+   FLUID GRADIENT MESH ANIMATIONS
+-------------------------------------- */
+@keyframes blob1 {
+  0%   { transform: translate(0px, 0px) scale(1); }
+  33%  { transform: translate(30vw, -20vh) scale(1.1); }
+  66%  { transform: translate(-20vw, 20vh) scale(0.9); }
+  100% { transform: translate(0px, 0px) scale(1); }
+}
+
+@keyframes blob2 {
+  0%   { transform: translate(0px, 0px) scale(1); }
+  33%  { transform: translate(-30vw, 20vh) scale(1.2); }
+  66%  { transform: translate(20vw, -20vh) scale(0.8); }
+  100% { transform: translate(0px, 0px) scale(1); }
+}
+
+@keyframes blob3 {
+  0%   { transform: translate(0px, 0px) scale(1); }
+  33%  { transform: translate(20vw, 30vh) scale(0.9); }
+  66%  { transform: translate(-10vw, -30vh) scale(1.1); }
+  100% { transform: translate(0px, 0px) scale(1); }
+}
+
+.animate-blob1 { animation: blob1 25s infinite cubic-bezier(0.4, 0, 0.2, 1); }
+.animate-blob2 { animation: blob2 30s infinite cubic-bezier(0.4, 0, 0.2, 1); }
+.animate-blob3 { animation: blob3 28s infinite cubic-bezier(0.4, 0, 0.2, 1); }
