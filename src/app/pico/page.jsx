@@ -31,7 +31,7 @@ export default function PicoPage() {
 
       <div className="relative z-10">
         {/* Hero Section */}
-        <section className="min-h-screen flex flex-col items-center justify-center px-4 md:px-20 text-center">
+        <section className="w-full pt-40 pb-16 flex flex-col items-center justify-center px-4 md:px-20 text-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -72,12 +72,12 @@ export default function PicoPage() {
             transition={{ duration: 0.8 }}
             className="max-w-3xl mx-auto space-y-6"
           >
-            <h2 className="text-4xl md:text-5xl font-semibold mb-8">Narrative Architecture Orchestrated by <span className="text-[#b388ff]">Oura.Casa</span></h2>
+            <h2 className="text-4xl md:text-5xl font-semibold mb-8">Narrative Architecture Orchestrated by <Link href="https://oura.casa" target="_blank" rel="noopener noreferrer" className="text-[#b388ff] hover:text-white transition-colors duration-300 underline decoration-white/20 underline-offset-4">Oura.Casa</Link></h2>
             <p className="text-xl text-gray-400 leading-relaxed">
               We often brush past the little things. But our days are made of pico-sized moments. A moment of doubt, a sudden burst of joy, a quiet wave of calm. 
             </p>
             <p className="text-xl text-gray-400 leading-relaxed">
-              Guided by the clinical storytelling and psychological framework of Oura.Casa, pico helps you capture these micro-emotions so you can isolate the signal from the noise and see the definitive structure of your well-being.
+              Guided by the clinical storytelling and psychological framework of <Link href="https://oura.casa" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#b388ff] transition-colors duration-300 underline decoration-white/20 underline-offset-4">Oura.Casa</Link>, pico helps you capture these micro-emotions so you can isolate the signal from the noise and see the definitive structure of your well-being.
             </p>
           </motion.div>
         </section>
