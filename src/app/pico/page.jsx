@@ -58,7 +58,7 @@ export default function PicoPage() {
             </div>
           </motion.div>
           
-          <div className="w-full max-w-5xl mt-12 h-[60vh] relative">
+          <div className="w-full max-w-6xl mt-24 h-[75vh] relative z-20">
             <PicoModel />
           </div>
         </section>
