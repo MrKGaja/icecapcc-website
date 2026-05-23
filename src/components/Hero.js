@@ -17,6 +17,7 @@ export default function Hero() {
           loop 
           muted 
           playsInline 
+          poster="/hero-video-poster.jpg"
           className="w-full h-full object-cover opacity-80"
         >
           <source src="/Split_ocean_scene_with_fish_202605230230.mp4" type="video/mp4" />
