@@ -59,11 +59,9 @@ export default function IcebergCanvas() {
             floatingRange={[-0.5, 0.5]}
           >
             <Suspense fallback={<Html center className="text-white/50 text-sm tracking-widest uppercase whitespace-nowrap">Structuring Geometry...</Html>}>
-              <group position={[0, -1.5, 0]}>
-                <Bounds fit clip observe margin={1.5}>
-                  <Model />
-                </Bounds>
-              </group>
+              <Bounds fit clip observe margin={1.5}>
+                <Model />
+              </Bounds>
             </Suspense>
           </Float>
         </PresentationControls>

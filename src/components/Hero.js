@@ -12,13 +12,17 @@ export default function Hero() {
       
       {/* 1. Cinematic Video Background */}
       <div className="absolute inset-0 z-0 pointer-events-none">
+        <img 
+          src="/hero-video-poster.jpg" 
+          alt="" 
+          className="absolute inset-0 w-full h-full object-cover opacity-80" 
+        />
         <video 
           autoPlay 
           loop 
           muted 
           playsInline 
-          poster="/hero-video-poster.jpg"
-          className="w-full h-full object-cover opacity-80"
+          className="absolute inset-0 w-full h-full object-cover opacity-80"
         >
           <source src="/Split_ocean_scene_with_fish_202605230230.mp4" type="video/mp4" />
         </video>
