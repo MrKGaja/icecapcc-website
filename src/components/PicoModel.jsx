@@ -41,7 +41,7 @@ export default function PicoModel() {
               floatIntensity={1} 
               floatingRange={[-0.2, 0.2]}
             >
-              <Bounds fit clip observe margin={2.5}>
+              <Bounds fit clip observe margin={1.0}>
                 <Model />
               </Bounds>
             </Float>
