@@ -67,14 +67,9 @@ export default function AppsPage() {
                       <div className="w-2.5 h-2.5 rounded-full bg-yellow-500/50"></div>
                       <div className="w-2.5 h-2.5 rounded-full bg-green-500/50"></div>
                     </div>
-                    {/* App Content Placeholder */}
-                    <div className="flex-1 p-6 flex flex-col gap-4">
-                      <div className="w-1/3 h-4 rounded-full bg-white/10 animate-pulse"></div>
-                      <div className="w-full h-24 rounded-lg bg-white/5"></div>
-                      <div className="flex gap-4">
-                        <div className="flex-1 h-20 rounded-lg bg-white/5"></div>
-                        <div className="flex-1 h-20 rounded-lg bg-white/5"></div>
-                      </div>
+                    {/* App Content */}
+                    <div className="flex-1 p-2 flex items-center justify-center relative overflow-hidden">
+                      <img src="/pico-logo.jpeg" alt="Pico Logo" className="w-full h-full object-cover rounded-lg opacity-90 transition-transform duration-700 group-hover:scale-105" />
                     </div>
                   </div>
                   
