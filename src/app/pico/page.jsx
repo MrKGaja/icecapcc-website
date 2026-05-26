@@ -31,36 +31,38 @@ export default function PicoPage() {
 
       <div className="relative z-10">
         {/* Hero Section */}
-        <section className="w-full pt-40 pb-16 flex flex-col items-center justify-center px-4 md:px-20 text-center">
+        <section className="relative w-full min-h-screen flex flex-col items-center justify-center px-4 md:px-20 text-center overflow-hidden">
+          
+          {/* 3D Model Background */}
+          <div className="absolute inset-0 z-0 opacity-80 mix-blend-screen">
+            <PicoModel />
+          </div>
+
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, ease: "easeOut" }}
-            className="space-y-6"
+            className="relative z-10 space-y-6 pointer-events-none mt-20"
           >
-            <h1 className="text-6xl md:text-8xl font-bold tracking-tight">
+            <h1 className="text-8xl md:text-[12rem] font-bold tracking-tighter leading-none mb-2 drop-shadow-2xl">
               pico<span className="text-[#7c4dff]">.</span>
             </h1>
-            <p className="text-xl md:text-3xl text-gray-400 font-light max-w-2xl mx-auto">
+            <p className="text-2xl md:text-4xl text-white/80 font-light max-w-2xl mx-auto drop-shadow-lg">
               every emotion matters.
             </p>
-            <p className="text-md md:text-lg text-gray-500 max-w-xl mx-auto mt-8">
+            <p className="text-md md:text-xl text-white/60 max-w-xl mx-auto mt-8 font-light drop-shadow-md">
               Big shifts, tiny ripples, and everything in between. Meet pico—your quiet space to track, reflect, and understand what you're feeling today.
             </p>
             
-            <div className="pt-12">
+            <div className="pt-12 pointer-events-auto">
               <Link 
                 href="#explore" 
-                className="inline-flex items-center justify-center px-8 py-4 rounded-full bg-[#311b92]/20 text-[#b388ff] border border-[#311b92]/50 hover:bg-[#311b92]/40 hover:scale-105 transition-all duration-300 font-medium"
+                className="inline-flex items-center justify-center px-8 py-4 rounded-full bg-[#311b92]/20 text-[#b388ff] border border-[#311b92]/50 hover:bg-[#311b92]/40 hover:scale-105 transition-all duration-300 font-medium backdrop-blur-md"
               >
                 Start Exploring
               </Link>
             </div>
           </motion.div>
-          
-          <div className="w-full max-w-6xl mt-24 h-[75vh] relative z-20">
-            <PicoModel />
-          </div>
         </section>
 
         {/* The Empathy Block */}

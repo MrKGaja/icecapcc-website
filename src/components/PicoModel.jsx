@@ -19,7 +19,7 @@ function Model(props) {
 
 export default function PicoModel() {
   return (
-    <div className="w-full h-full min-h-[500px] relative z-20">
+    <div className="absolute inset-0 w-full h-full pointer-events-none">
       <Canvas shadows camera={{ fov: 45 }}>
         
         <PresentationControls
