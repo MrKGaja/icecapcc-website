@@ -1,7 +1,7 @@
 'use client';
 import React, { useRef, Suspense } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
-import { useGLTF, PresentationControls, Float, Html, Stage } from '@react-three/drei';
+import { useGLTF, PresentationControls, Float, Html, Bounds, Environment } from '@react-three/drei';
 
 function Model(props) {
   const { scene } = useGLTF('/Humming-Bird.glb');
@@ -31,16 +31,20 @@ export default function PicoModel() {
           azimuth={[-Math.PI / 1.4, Math.PI / 2]}
         >
           <Suspense fallback={<Html center className="text-[#b388ff] text-sm tracking-widest whitespace-nowrap uppercase">Loading Structural Architecture...</Html>}>
-            <Stage environment="studio" intensity={0.5} adjustCamera={2.5} shadows={false}>
-              <Float
-                speed={2} 
-                rotationIntensity={0.5} 
-                floatIntensity={1} 
-                floatingRange={[-0.2, 0.2]}
-              >
+            <Environment preset="studio" />
+            <ambientLight intensity={0.8} />
+            <directionalLight position={[10, 10, 5]} intensity={1.5} color="#b388ff" />
+            <directionalLight position={[-10, -10, -5]} intensity={0.5} />
+            <Float
+              speed={2} 
+              rotationIntensity={0.5} 
+              floatIntensity={1} 
+              floatingRange={[-0.2, 0.2]}
+            >
+              <Bounds fit clip observe margin={2.5}>
                 <Model />
-              </Float>
-            </Stage>
+              </Bounds>
+            </Float>
           </Suspense>
         </PresentationControls>
       </Canvas>
