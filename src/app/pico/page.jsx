@@ -42,26 +42,17 @@ export default function PicoPage() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, ease: "easeOut" }}
-            className="relative z-10 space-y-6 pointer-events-none mt-20"
+            className="relative z-10 space-y-4 pointer-events-none mt-64 md:mt-80"
           >
-            <h1 className="text-8xl md:text-[12rem] font-bold tracking-tighter leading-none mb-2 drop-shadow-2xl">
+            <h1 className="text-7xl md:text-[8rem] font-bold tracking-tighter leading-none mb-2 drop-shadow-2xl">
               pico<span className="text-[#7c4dff]">.</span>
             </h1>
-            <p className="text-2xl md:text-4xl text-white/80 font-light max-w-2xl mx-auto drop-shadow-lg">
+            <p className="text-xl md:text-2xl text-white/80 font-light max-w-2xl mx-auto drop-shadow-lg">
               every emotion matters.
             </p>
-            <p className="text-md md:text-xl text-white/60 max-w-xl mx-auto mt-8 font-light drop-shadow-md">
+            <p className="text-sm md:text-base text-white/60 max-w-xl mx-auto mt-6 font-light drop-shadow-md px-4">
               Big shifts, tiny ripples, and everything in between. Meet pico—your quiet space to track, reflect, and understand what you're feeling today.
             </p>
-            
-            <div className="pt-12 pointer-events-auto">
-              <Link 
-                href="#explore" 
-                className="inline-flex items-center justify-center px-8 py-4 rounded-full bg-[#311b92]/20 text-[#b388ff] border border-[#311b92]/50 hover:bg-[#311b92]/40 hover:scale-105 transition-all duration-300 font-medium backdrop-blur-md"
-              >
-                Start Exploring
-              </Link>
-            </div>
           </motion.div>
         </section>
 
