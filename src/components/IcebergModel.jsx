@@ -59,7 +59,7 @@ export default function IcebergCanvas() {
             floatingRange={[-0.5, 0.5]}
           >
             <Suspense fallback={<Html center className="text-white/50 text-sm tracking-widest uppercase whitespace-nowrap">Structuring Geometry...</Html>}>
-              <Bounds fit clip observe margin={1.5}>
+              <Bounds fit clip observe margin={2.2}>
                 <Model />
               </Bounds>
             </Suspense>
