@@ -31,7 +31,7 @@ export default function PicoModel() {
           azimuth={[-Math.PI / 1.4, Math.PI / 2]}
         >
           <Suspense fallback={<Html center className="text-[#b388ff] text-sm tracking-widest whitespace-nowrap uppercase">Loading Structural Architecture...</Html>}>
-            <Stage environment="studio" intensity={0.5} adjustCamera={1.2} shadows={false}>
+            <Stage environment="studio" intensity={0.5} adjustCamera={2.5} shadows={false}>
               <Float
                 speed={2} 
                 rotationIntensity={0.5} 
