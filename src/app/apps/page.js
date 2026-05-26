@@ -57,7 +57,7 @@ export default function AppsPage() {
               </div>
               
               {/* Visual Mockup Area */}
-              <div className="flex-1 w-full h-[400px] md:h-[500px] rounded-3xl overflow-hidden relative group-hover:scale-[1.02] transition-transform duration-700 ease-out border border-white/10 bg-white/5 backdrop-blur-sm p-4">
+              <div className="flex-1 w-full h-[250px] md:h-[500px] rounded-3xl overflow-hidden relative group-hover:scale-[1.02] transition-transform duration-700 ease-out border border-white/10 bg-white/5 backdrop-blur-sm p-4">
                 <div className={`w-full h-full rounded-2xl bg-gradient-to-br ${app.color} flex items-center justify-center relative overflow-hidden`}>
                   {/* Glassmorphism card inside the mockup */}
                   <div className="w-[80%] h-[70%] rounded-xl bg-white/5 backdrop-blur-md border border-white/10 shadow-2xl flex flex-col">
